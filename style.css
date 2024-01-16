@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.game-container {
+  text-align: center;
+}
+
+.grid {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.grid div {
+  box-sizing: border-box;
+  width: calc(100% / 15);
+  height: calc(100% / 15);
+}
+
+.invader {
+  background-color: purple;
+  border-radius: 10px;
+}
+
+.shooter {
+  background-color: red;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 5px;
+}
+
+.laser {
+  background-color: orange;
+}
+
+.results {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.boom {
+  animation: boom 0.3s ease-in-out;
+}
+
+@keyframes boom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
